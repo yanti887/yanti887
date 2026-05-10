@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codashop Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      background:#2b0036;
+      color:white;
+    }
+    .navbar{
+      background:#4b1d5e;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .menu{
+      font-size:24px;
+    }
+    .logo{
+      font-weight:700;
+      font-size:24px;
+    }
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+    .search{
+      font-size:22px;
+    }
+    .btn{
+      background:#6d4cff;
+      border:none;
+      padding:10px 20px;
+      border-radius:20px;
+      color:white;
+      font-weight:600;
+    }
+    .banner{
+      margin:10px;
+      border-radius:10px;
+      overflow:hidden;
+      position:relative;
+    }
+    .banner img{
+      width:100%;
+      display:block;
+    }
+    .dots{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      margin:15px 0 25px;
+    }
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#8f7aa5;
+    }
+    .dot.active{
+      background:white;
+    }
+    .promo{
+      margin:0 16px 30px;
+      background:#fff;
+      color:#333;
+      border-radius:20px;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .promo-icon{
+      width:58px;
+      height:58px;
+      background:#7b4cff;
+      border-radius:16px;
+    }
+    h2{
+      font-size:42px;
+      font-weight:800;
+      padding:0 18px;
+      margin-bottom:18px;
+      letter-spacing:2px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      padding:0 14px 40px;
+    }
+    .card{
+      background:#4a2457;
+      border-radius:18px;
+      overflow:hidden;
+    }
+    .card img{
+      width:100%;
+      height:170px;
+      object-fit:cover;
+      display:block;
+    }
+    .card-title{
+      padding:14px 10px 18px;
+      text-align:center;
+      font-size:14px;
+      line-height:1.5;
+    }
+    @media(max-width:500px){
+      .grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+      h2{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="menu">☰</div>
+      <div class="logo">CODASHOP</div>
+    </div>
+    <div class="nav-right">
+      <div class="search">⌕</div>
+      <button class="btn">Daftar</button>
+    </div>
+  </div>
+
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop" alt="banner">
+  </div>
+
+  <div class="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-icon"></div>
+    <div>
+      <div style="font-weight:600">Tambahkan Codashop ke home screen Anda</div>
+      <div style="color:#6d4cff;margin-top:6px;font-weight:600">Tambahkan sekarang →</div>
+    </div>
+  </div>
+
+  <h2>WEB STORE</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-title">The Division Resurgence Webstore</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-title">Rainbow Six Mobile Webstore</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-title">Obey Me! Official Web Store</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-title">eFootball™ Web Store</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-title">EA SPORTS FC™ Mobile Webstore</div>
+    </div>
+  </div>
+</body>
+</html>
